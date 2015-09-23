@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema name="Email Data Model" version="1.5">
+	<types>
+		<fieldType name="string" class="solr.StrField" sortMissingLast="true" />
+		
+		<fieldType name="text-general" class="solr.TextField"
+		positionIncrementGap="100">
+			<analyzer type="index">
+				<tokenizer class="solr.StandardTokenizerFactory"/>
+				<!-- <filter class="solr.StopFilterFactory" words="stopwords.txt"/> -->
+				<filter class="solr.LowerCaseFilterFactory"/>
+			</analyzer>
+			<analyzer type="query">
+				<tokenizer class="solr.StandardTokenizerFactory"/>
+				<!-- <filter class="solr.StopFilterFactory" words="stopwords.txt"/> -->
+				<filter class="solr.LowerCaseFilterFactory"/>
+				<!-- <filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt"/> -->
+			</analyzer>
+		</fieldType>
+
+	</types>
+
+	<fields>
+		<field name="from" type="string" indexed="true" stored="true" required="true" />
+		<field name="to" type="string" indexed="true" stored="true" required="true" />
+		<field name="title" type="string" indexed="true" stored="true" required="true" />
+		<field name="author" type="string" indexed="true" stored="true" required="true" />
+	</fields>
+	<uniqueKey>from</uniqueKey>
+</schema>
