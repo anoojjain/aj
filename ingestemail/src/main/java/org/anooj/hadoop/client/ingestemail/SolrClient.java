@@ -157,7 +157,7 @@ public class SolrClient {
 	@Before
 	public void setUp() {
 		//client = new HttpSolrServer("http://127.0.0.1:8983/solr/biblo");
-		client = new HttpSolrServer("http://192.168.1.35:8983/solr/collection3_shard1_replica1");
+		client = new HttpSolrServer("http://192.168.1.34:8983/solr/collection3_shard1_replica1");
 	}
 
 	/**

@@ -17,6 +17,8 @@ import org.apache.tika.parser.Parser;
 import org.apache.tika.sax.BodyContentHandler;
 import org.xml.sax.SAXException;
 
+
+
 public class TikaParser {
 
 	public static void main(String[] args) throws Exception {
