@@ -15,7 +15,7 @@
 		<jdk.version>1.7</jdk.version>
 		<tika.version>1.10</tika.version>
 		<solr.version>4.10.3</solr.version>
-		<junit.version>4.11</junit.version>
+		<junit.version>4.13.1</junit.version>
 	</properties>
 
 
