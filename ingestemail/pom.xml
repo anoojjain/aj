@@ -14,7 +14,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jdk.version>1.7</jdk.version>
 		<tika.version>1.10</tika.version>
-		<solr.version>4.10.3</solr.version>
+		<solr.version>8.8.2</solr.version>
 		<junit.version>4.11</junit.version>
 	</properties>
 
